@@ -1,0 +1,22 @@
+# Terraform state & artifacts (may contain sensitive values)
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+plan.out
+crash.log
+
+# Variable files with real values (keep the example)
+*.tfvars
+!*.tfvars.example
+
+# Credentials / secrets
+.aws/
+*.pem
+.env
+.env.*
+
+# OS noise
+.DS_Store
+Thumbs.db
